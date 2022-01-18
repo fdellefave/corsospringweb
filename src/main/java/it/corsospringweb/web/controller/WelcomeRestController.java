@@ -15,7 +15,7 @@ public class WelcomeRestController {
 	public String welcome() {
 		return "{message:\"welcome\"}";
 	}
-	
+
 	@ResponseBody
 	@RequestMapping("/goodbye")
 	public String goodbye() {
@@ -31,8 +31,9 @@ public class WelcomeRestController {
 	@ResponseBody
 	@RequestMapping(value = "/goodbyeFunzionante", method = RequestMethod.GET, params = {"nome=MyApp", "version=1.0"})
 	public String welcomeParamsFunzionante() {
+		System.out.println("ciao");
 		return "{message:\"goodbye with params\"}";
 	}
 	
-	
+
 }
