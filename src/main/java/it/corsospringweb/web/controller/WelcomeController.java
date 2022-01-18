@@ -13,7 +13,7 @@ public class WelcomeController {
 		return "Welcome!";
 	}
 	@ResponseBody 
-	@RequestMapping("/goodbye")
+	@RequestMapping("/ByeBye")
 	public String goodbye() {
 		return "Goodbye!";
 	}
